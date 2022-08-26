@@ -1,4 +1,4 @@
-#Exercicios-Python
+# Exercicios-Python
 
 Esta é uma lista com sugestões de programas para iniciantes em programação. Os exercícios podem ser implementados em pseudo-código, Python, C, C++, Java, Pascal ou em qualquer outra linguagem.
 
