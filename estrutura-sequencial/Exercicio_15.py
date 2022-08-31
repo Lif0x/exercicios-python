@@ -14,17 +14,15 @@
 #   Obs.: Salário Bruto - Descontos = Salário Líquido.
 
 valorPorHora = float(input("Digite o valor ganho por hora (em R$): "))
-horasTrabalhadas = int(input("Digite a quantidade de horas trabalhadas: "))
-
+horasTrabalhadas = float(input("Digite a quantidade de horas trabalhadas: "))
 salarioBruto = valorPorHora * horasTrabalhadas
 qtdPagamentoIR = salarioBruto * 0.11
 qtdPagamentoInss = salarioBruto * 0.08
 qtdPagamentoSindicato = salarioBruto * 0.05
 salarioLiquido = salarioBruto - qtdPagamentoIR - qtdPagamentoInss - qtdPagamentoSindicato
 
-print(f"\nO seu salário bruto é de R$ {salarioBruto:.2f}")
-print(f"O valor descontado para o imposto de renda é de R$ {qtdPagamentoIR}")
-print(f"O valor descontado para o INSS é de R$ {qtdPagamentoInss}")
-print(f"O valor descontado para o sindicato é de R$ {qtdPagamentoSindicato}")
-print(f"O seu salário líquido é de R$ {salarioLiquido:.2f}")
-
+print(f'''\nO seu salário bruto é de R$ {salarioBruto:.2f}
+O valor descontado para o imposto de renda é de R$ {qtdPagamentoIR:.2f}
+O valor descontado para o INSS é R$ {qtdPagamentoInss:.2f}
+O valor descontado para o sindicato é de R$ {qtdPagamentoSindicato:.2f}
+O seu salário líquido é R$ {salarioLiquido:.2f}''')
